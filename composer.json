@@ -1,0 +1,16 @@
+{
+    "require": {
+        "catfan/Medoo": "^1.5"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Model\\": "app/models",
+            "Widget\\": "app/widgets",
+            "Library\\": "app/library"
+        },
+        "files": [
+            "app/Library/functions.php"
+        ]
+    }
+}

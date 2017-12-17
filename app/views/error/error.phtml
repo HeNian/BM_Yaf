@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error</title>
+</head>
+<body>
+  <div style="background:pink;padding:30px">
+    <h3>我滴天！出错了ಥ_ಥ：</h3>
+    <div>错误编号： <?= $code?></div>
+    <div>错误文件： <?= $file?></div>
+    <div>错误行号： <?= $line?></div>
+    <div>错误信息： <?= $message?></div>
+    <div>
+      <h4>Trace:</h4>
+      <pre><?php print_r($trace);?></pre>
+    </div>
+  </div>
+</body>
+</html>
