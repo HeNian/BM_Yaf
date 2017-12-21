@@ -10,7 +10,7 @@
             "Library\\": "app/library"
         },
         "files": [
-            "app/Library/functions.php"
+            "app/library/functions.php"
         ]
     }
 }
