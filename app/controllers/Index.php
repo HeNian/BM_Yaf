@@ -11,7 +11,6 @@ class IndexController extends Controller
 	public function indexAction()
   {
     $db = new Model();
-    echo $a;
     $result = $db->select('order', [
         "[>]order_customize" => ['id'=>'order_id']
       ], '*', ['LIMIT'=>5]);
