@@ -1,6 +1,9 @@
 {
     "require": {
-        "catfan/Medoo": "^1.5"
+        "catfan/Medoo": "^1.5",
+        "filp/whoops": "^2.1",
+        "symfony/var-dumper": "^4.0",
+        "monolog/monolog": "^1.23"
     },
 
     "autoload": {

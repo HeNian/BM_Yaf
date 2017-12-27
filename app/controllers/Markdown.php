@@ -16,7 +16,8 @@ class MarkdownController extends Controller{
         $markdown = file_get_contents(APPLICATION_PATH."/data/doc/{$md}.md");
         $html = $parser->parse($markdown);
 
-        $this->getView()->assign("content",  $html);
-        return TRUE;
+        // $this->getView()->assign("content",  $html);
+        $content = $this->render('index', ['content' => $html]);
+        $this->getView()->display('markdown_layout.phtml',['content' => $content]);
     }
 }

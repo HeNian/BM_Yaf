@@ -34,7 +34,7 @@ function W($widget, $activeData = null){
  * @param  string  $label  包裹元素
  * @param  boolean $strict 是否显示类型
  */
-function dump($var, $echo=true, $label=null, $strict=true) {
+function dd($var, $echo=true, $label=null, $strict=true) {
     $label = ($label === null) ? '' : rtrim($label) . ' ';
     if (!$strict) {
         if (ini_get('html_errors')) {

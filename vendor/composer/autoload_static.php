@@ -7,6 +7,9 @@ namespace Composer\Autoload;
 class ComposerStaticInit79113f2ab0dc2e10e4a8b14c226c848f
 {
     public static $files = array (
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '860ee289d299eea9cf302e7703600f54' => __DIR__ . '/../..' . '/app/library/functions.php',
     );
 
@@ -14,9 +17,21 @@ class ComposerStaticInit79113f2ab0dc2e10e4a8b14c226c848f
         'W' => 
         array (
             'Widget\\' => 7,
+            'Whoops\\' => 7,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Php72\\' => 23,
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\VarDumper\\' => 28,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
         ),
         'M' => 
         array (
+            'Monolog\\' => 8,
             'Model\\' => 6,
             'Medoo\\' => 6,
         ),
@@ -30,6 +45,30 @@ class ComposerStaticInit79113f2ab0dc2e10e4a8b14c226c848f
         'Widget\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/widgets',
+        ),
+        'Whoops\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
+        'Symfony\\Polyfill\\Php72\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'Model\\' => 
         array (

@@ -2,24 +2,36 @@
 
 use Library\Core\Controller;
 use Library\Core\Model;
+use Library\Core\Log;
+
+use Model\Index\Logic\DateRange;
 
 class IndexController extends Controller
 {
-  protected $_layout = 'layout';
-  protected $_enable_view = true;
-
 	public function indexAction()
   {
     $db = new Model();
+    echo $a;
     $result = $db->select('order', [
         "[>]order_customize" => ['id'=>'order_id']
       ], '*', ['LIMIT'=>5]);
 
-    //给 layout赋值
-    $this->assignLayout('title','hello Layout');
+    Log::alert('hello');
 
-    $this->getView()->assign('content', $result);
-    $this->getView()->assign('layout','hello');
-		return true;
+    Log::error('userList', $result);
+
+    $this->assign('content', $result);
+    $this->display('index');
 	}
+
+  public function testAction()
+  {
+    $date = '2017-11-11';
+    $start = 1;
+
+    $dateRange = new DateRange();
+
+    $result = $dateRange->byWeek($date, $start);
+    dump($result);
+  }
 }
